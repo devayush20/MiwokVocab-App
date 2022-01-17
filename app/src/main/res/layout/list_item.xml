@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/tan_background"
+    android:orientation="horizontal">
+
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="88dp"
+        android:layout_height="88dp"
+        android:background="@color/tan_background"
+        android:src="@mipmap/ic_launcher"
+        tools:ignore="ContentDescription"
+        />
+
+    <LinearLayout
+        android:id="@+id/text_container"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_vertical"
+        android:orientation="vertical"
+        android:paddingStart="16dp"
+        android:padding="16dp"
+        android:layout_weight="4"
+        android:paddingLeft="16dp"
+        tools:ignore="RtlSymmetry">
+
+        <TextView
+            android:textAppearance="?android:textAppearanceMedium"
+            android:textColor="#FFFFFF"
+            android:id="@+id/miwok_textview"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:fontFamily="sans-serif-black"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            tools:text="lutti"
+            tools:ignore="NestedWeights" />
+
+        <TextView
+
+            android:id="@+id/default_textview"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:fontFamily="sans-serif-condensed"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            android:text="@string/sample_text"
+            />
+
+    </LinearLayout>
+    <ImageView
+        android:id="@+id/play_button_image_view"
+        android:layout_width="0dp"
+        android:padding="20dp"
+        android:layout_height="match_parent"
+        android:src="@drawable/baseline_play_arrow_black_18"
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        android:contentDescription="@string/play_button" />
+</LinearLayout>
